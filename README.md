@@ -1,9 +1,10 @@
-# [miri4ech.github.io](https://miri4ech.com/)
+# [miri4ech.github.io](https://miri4ech.github.io/)
 
 
 ## Requirements
 
 - [Jekyll](https://jekyllrb.com)
+- Ruby
 
 ## Installation
 
@@ -18,7 +19,7 @@ $ cd miri4ech.github.io/
 ## Preview
 
 ```bash
-$ jekyll s
+$ jekyll serve
 ```
 
 You can see the site locally. [http://localhost:4000](http://localhost:4000)  
