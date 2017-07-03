@@ -26,7 +26,7 @@ github_username:  miri4ech
 
 # Build settings
 markdown: kramdown
-theme: jekyll-swiss
+theme: minima
 gems:
   - jekyll-feed
 
