@@ -3,8 +3,11 @@
 
 ## Requirements
 
-- [Jekyll](https://jekyllrb.com)
 - Ruby
+- Nodejs(npm)
+- [Jekyll](https://jekyllrb.com)
+- [Bundler](https://jekyllrb.com/)
+- [gulp-sass](https://www.npmjs.com/package/gulp-sass)
 
 ## Installation
 
