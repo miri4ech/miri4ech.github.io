@@ -1,10 +1,7 @@
 ---
 layout: home
-title: miri
+title: miri4ech
 ---
-
-- Web Developer
-- Japan
 
 
 

@@ -1,17 +1,31 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 	<head>
 		<title>{{ page.title }}</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-		<link rel="stylesheet" type="text/css" href="/assets/css/home.css">
+		<link rel="stylesheet" type="text/css" href="/assets/css/main.css">
 	</head>
 	<body>
-		<!-- <script src="js/three.min.js"></script> -->
+		<div class="block-left">
+			<div class="content">
+			<div class="main-info">
+				<h1>{{ site.title }}</h1>
+				<h2>{{ site.description }}</h2>
+				{% include social-links.html %}
+			</div>
+			</div>
+			<canvas></canvas>
+		</div>		
+		<div class="block-right">
+			<div class="content">
+			<div class="about-info">{{ content }}</div>
+			</div>
+		</div>
+
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/86/three.min.js"></script>
-		<script src="js/three.min.js"></script>
-		<script src="js/renderers/Projector.js"></script>
-		<script src="js/renderers/CanvasRenderer.js"></script>
+		<script src="assets/js/renderers/Projector.js"></script>
+		<script src="assets/js/renderers/CanvasRenderer.js"></script>
 		<script>
 			var container;
 			var camera, scene, renderer, group, particle;
@@ -21,9 +35,7 @@
 			init();
 			animate();
 			function init() {
-				container = document.createElement( 'div' );
-				container.className = 'home';
-				document.body.appendChild( container );
+				container = document.body;
 				camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 1, 3000 );
 				camera.position.z = 1000;
 				scene = new THREE.Scene();
@@ -64,11 +76,6 @@
 				camera.updateProjectionMatrix();
 				renderer.setSize( window.innerWidth, window.innerHeight );
 			}
-			//
-			// function onDocumentMouseMove( event ) {
-			// 	mouseX = event.clientX - windowHalfX;
-			// 	mouseY = event.clientY - windowHalfY;
-			// }
 			function onDocumentTouchStart( event ) {
 				if ( event.touches.length === 1 ) {
 					event.preventDefault();
@@ -83,7 +90,6 @@
 					mouseY = event.touches[ 0 ].pageY - windowHalfY;
 				}
 			}
-			//
 			function animate() {
 				requestAnimationFrame( animate );
 				render();
