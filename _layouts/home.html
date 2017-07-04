@@ -4,19 +4,12 @@
 		<title>{{ page.title }}</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-		<style>
-			body {
-				background-color: #000000;
-				margin: 0px;
-				overflow: hidden;
-			}
-			a {
-				color:#0078ff;
-			}
-		</style>
+		<link rel="stylesheet" type="text/css" href="css/home.css">
 	</head>
 	<body>
+		<!-- <script src="js/three.min.js"></script> -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/86/three.min.js"></script>
+		<script src="js/three.min.js"></script>
 		<script src="js/renderers/Projector.js"></script>
 		<script src="js/renderers/CanvasRenderer.js"></script>
 		<script>
@@ -29,6 +22,7 @@
 			animate();
 			function init() {
 				container = document.createElement( 'div' );
+				container.className = 'home';
 				document.body.appendChild( container );
 				camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 1, 3000 );
 				camera.position.z = 1000;
@@ -43,7 +37,7 @@
 				scene.add( group );
 				for ( var i = 0; i < 1000; i++ ) {
 					var material = new THREE.SpriteCanvasMaterial( {
-						color: Math.random() * 0x808008 + 0x808080,
+						color: Math.random() * 0x808008 + 0x808008,
 						program: program
 					} );
 					particle = new THREE.Sprite( material );
