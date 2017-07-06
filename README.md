@@ -16,9 +16,6 @@ $ git clone https://github.com/miri4ech/miri4ech.github.io.git
 $ cd miri4ech.github.io/
 ```
 
-## Build
-
-
 ## Preview
 
 ```bash
