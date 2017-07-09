@@ -18,6 +18,13 @@ $ cd miri4ech.github.io/
 
 ## Build
 
+```
+$ npm install
+$ bundle update
+
+if you change your sass layout 
+$ gulp sass
+```
 
 ## Preview
 
