@@ -15,11 +15,14 @@
 				{% include social-links.html %}
 			</div>
 			</div>
-			<canvas></canvas>
 		</div>		
 		<div class="block-right">
 			<div class="content">
-			<div class="about-info">{{ content }}</div>
+			<div class="about-info">
+				<h1>About</h1>
+				<p>I am Japanese native Front-end Developer,</p>
+				<p>currently working at an IT company in Japan.</p>
+			</div>
 			</div>
 		</div>
 
@@ -65,7 +68,6 @@
 				container.appendChild( renderer.domElement );
 				document.addEventListener( 'touchstart', onDocumentTouchStart, false );
 				document.addEventListener( 'touchmove', onDocumentTouchMove, false );
-				
 				window.addEventListener( 'resize', onWindowResize, false );
 			}
 			function onWindowResize() {

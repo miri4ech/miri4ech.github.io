@@ -190,7 +190,7 @@ canvas {
   h1,
   h2 {
     font-size: 35px;
-    color: lighten($black, 27.8431);
+    color: $icon-color;
     &:after {
       position: absolute;
       left: auto;
