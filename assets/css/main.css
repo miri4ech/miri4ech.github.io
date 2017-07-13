@@ -3965,7 +3965,8 @@ img.mfp-img {
   float: none; }
 
 .footer-col-1 {
-  width: auto; }
+  width: auto;
+  font-size: 14px; }
 
 .footer-col-2 ul {
   display: flex;
