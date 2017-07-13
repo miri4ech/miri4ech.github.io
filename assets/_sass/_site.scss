@@ -26,6 +26,11 @@
   }
 }
 
+.block-right {
+  z-index:10;
+  background-color:#FFF;
+}
+
 .inactive {
   pointer-events: none;
   pointer: default;
@@ -189,8 +194,8 @@ canvas {
   text-align: left;
   h1,
   h2 {
-    font-size: 35px;
-    color: $icon-color;
+    font-size: 30px;
+    color: $black;
     &:after {
       position: absolute;
       left: auto;
@@ -200,7 +205,7 @@ canvas {
       -ms-transform: none;
       -o-transform: none;
       transform: none;
-      background: $green;
+      background: $icon-color;
       left: 0;
       width: 200px;
     }
@@ -214,6 +219,9 @@ canvas {
     &:first-of-type {
       padding-top: 35px;
     }
+  }
+  a {
+    color: $icon-color;
   }
 }
 

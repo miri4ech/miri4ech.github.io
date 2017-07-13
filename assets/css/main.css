@@ -235,7 +235,8 @@ html {
 html,
 body {
   height: 100%;
-  line-height: 1.2; }
+  line-height: 1.2;
+  overflow-y: scroll; }
 
 body {
   font-family: "BROWNIE", sans-serif;
@@ -388,7 +389,7 @@ blockquote {
   padding-left: 1em;
   padding-right: 1em;
   font-style: italic;
-  border-left: 0.25em solid #d4d4d4; }
+  border-left: 0.25em solid #999999; }
   blockquote cite {
     font-style: italic;
     font-size: 0.85em; }
@@ -488,6 +489,10 @@ td > code {
   .block-left .content,
   .block-right .content {
     height: 100%; }
+
+.block-right {
+  z-index: 10;
+  background-color: #FFF; }
 
 .inactive {
   pointer-events: none;
@@ -642,8 +647,8 @@ canvas {
   text-align: left; }
   .about-info h1,
   .about-info h2 {
-    font-size: 35px;
-    color: #474747; }
+    font-size: 30px;
+    color: #000000; }
     .about-info h1:after,
     .about-info h2:after {
       position: absolute;
@@ -654,7 +659,7 @@ canvas {
       -ms-transform: none;
       -o-transform: none;
       transform: none;
-      background: #72cc96;
+      background: #981ceb;
       left: 0;
       width: 200px; }
   .about-info p {
@@ -665,6 +670,8 @@ canvas {
     line-height: 24px; }
     .about-info p:first-of-type {
       padding-top: 35px; }
+  .about-info a {
+    color: #981ceb; }
 
 @media screen and (max-height: 605px) {
   .post-title-section .section-title {
@@ -847,8 +854,8 @@ canvas {
   -ms-user-select: none;
   user-select: none; }
   .btn:hover {
-    background-color: #64c1ed;
-    border: 1px solid #64c1ed;
+    background-color: #4caad6;
+    border: 1px solid #4caad6;
     color: #f2f2f2; }
   .btn_info {
     background-color: #b2e9ff; }
@@ -3675,7 +3682,7 @@ pre.highlight {
   display: none !important; }
 
 .mfp-preloader {
-  color: #d4d4d4;
+  color: #999999;
   position: absolute;
   top: 50%;
   width: auto;
@@ -3685,7 +3692,7 @@ pre.highlight {
   right: 8px;
   z-index: 1044; }
   .mfp-preloader a {
-    color: #d4d4d4; }
+    color: #999999; }
     .mfp-preloader a:hover {
       color: #FFFFFF; }
 
@@ -3747,7 +3754,7 @@ button::-moz-focus-inner {
   position: absolute;
   top: 0;
   right: 0;
-  color: #d4d4d4;
+  color: #999999;
   font-size: 12px;
   line-height: 18px;
   white-space: nowrap; }
@@ -3936,3 +3943,27 @@ img.mfp-img {
   .mfp-container {
     padding-left: 6px;
     padding-right: 6px; } }
+
+.page-link {
+  text-decoration: none !important; }
+
+.post-content {
+  color: #999999; }
+  .post-content a {
+    color: #981ceb;
+    text-decoration: none; }
+  .post-content span {
+    font-family: fantasy; }
+
+.footer-col {
+  float: none; }
+
+.footer-col-1 {
+  width: auto; }
+
+.footer-col-2 ul {
+  display: flex;
+  list-style: none; }
+
+.fa {
+  font-size: 20px; }

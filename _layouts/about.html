@@ -9,6 +9,7 @@
 
     <title>About</title>
     <meta name="description" content="Web Developer in Japan">
+    <link rel="stylesheet" href="/assets/main.css">
 
     <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
     <link rel="canonical" href="http://localhost:4000/about/">
@@ -21,7 +22,7 @@
 
     <header class="site-header" role="banner">
       <div class="wrapper">
-        <a class="site-title" href="/">miri4ech</a>       
+        <!-- <span class="site-title" href="/">About</span>        -->
           <nav class="site-nav">
             <input type="checkbox" id="nav-trigger" class="nav-trigger" />
             <label for="nav-trigger">
@@ -36,7 +37,7 @@
 
             <div class="trigger">
                 
-                <a class="page-link" href="/">miri4ech</a>
+                <a class="page-link" href="/">Home</a>
                 
             </div>
           </nav>
@@ -48,14 +49,22 @@
         <article class="post">
 
           <header class="post-header">
-            <h1 class="post-title">About</h1>
+            <h1 class="post-title">Miri</h1>
           </header>
 
           <div class="post-content">
-            <p>I am Japanese native Front-end Developer, currently working at an IT company in Japan.</p>
-
-            <p>You can find the source code for insta_like at GitHub:
-            <a href="https://miri4ech.github.io/insta_like/">Instagram like</a> 
+            <p>Japanese native Front-end Developer, currently working at an IT company.</p>
+            <br />
+            <p>I have created something like...</p>
+            <br />
+            <ul>
+              <li>insta_like at GitHub: <a href="https://miri4ech.github.io/insta_like/">Instagram like</a></li>
+              <li>
+                <a href="https://soundcloud.com/girls-do-it">Girls Do It</a> is my Podcast for women in tech. Sorry its only in Japanese <span>:)</span>
+              </li>
+            </ul>
+            <br />
+            <iframe width="100%" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/222198750&amp;color=00aabb&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
           </div>
 
         </article>
@@ -64,22 +73,14 @@
 
     <footer class="site-footer">
         <div class="wrapper">
-          <h2 class="footer-heading">miri4ech</h2>
+          <h2 class="footer-heading">Contact</h2>
           <div class="footer-col-wrapper">
             <div class="footer-col footer-col-1">
-              <ul class="contact-list">
-                <li>Cebu</li>
-                <li>Tokyo</li>
-                <li>Okinawa</li>  
-              </ul>
+              If you have any questions about me or just want to say hello, feel free to contact me. 
+              Below are my social pages:
             </div>
-
             <div class="footer-col footer-col-2">
                 {% include social-links.html %}
-            </div>
-
-            <div class="footer-col footer-col-3">
-              <p>Web Developer in Japan</p>
             </div>
           </div>
       </div>

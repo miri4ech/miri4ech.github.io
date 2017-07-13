@@ -7,3 +7,37 @@
 @import "vendor/fonts";
 @import "vendor/font-awesome/font-awesome";
 @import "vendor/magnific-popup/magnific-popup";
+
+
+//modified original
+.page-link {
+  text-decoration: none !important;
+}
+
+.post-content {
+	color: $gray;
+	a {
+		color: $icon-color;
+  	text-decoration: none;
+	}
+	span {
+		font-family: fantasy;
+	}
+}
+
+.footer-col {
+	float: none;
+}
+.footer-col-1 {
+	width: auto;
+}
+.footer-col-2 {
+	ul {
+		display: flex;
+		list-style:none;
+	}
+}
+
+.fa {
+	font-size: 20px;
+}
