@@ -3959,7 +3959,7 @@ img.mfp-img {
     list-style-position: inside; }
   .post-content li {
     font-size: 14px;
-    padding-left: 20px; }
+    padding: 10px 0 0 20px; }
 
 .footer-col {
   float: none; }
