@@ -3954,6 +3954,12 @@ img.mfp-img {
     text-decoration: none; }
   .post-content span {
     font-family: fantasy; }
+  .post-content ul {
+    list-style-type: square;
+    list-style-position: inside; }
+  .post-content li {
+    font-size: 14px;
+    padding-left: 20px; }
 
 .footer-col {
   float: none; }
