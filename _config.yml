@@ -1,7 +1,7 @@
 # Site settings
-title: miri4ech
-author: miri4ech
-keywords: "programming, miri4ech, web Developer, JavaScript, Ruby"
+title: miri
+author: miri
+keywords: "programming, web Developer, JavaScript, Ruby"
 description: "Web Developer in Japan"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://miri4ech.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
@@ -9,11 +9,11 @@ url: "https://miri4ech.github.io/" # the base hostname & protocol for your site,
 # Social Links
 #email:             email
 #google.plus:        username
-twitter:            miri4ech
+twitter:            username
 #facebook:           username
 github:             miri4ech
 # stackoverflow:     123456/username   from a "http://stackoverflow.com/users/123456/username" link
-linkedin:          miri56
+linkedin:          miri4ech
 #xing:              username
 #instagram:          username
 #lastfm:            username
@@ -30,9 +30,6 @@ linkedin:          miri56
 #keybase:           username
 #xmpp:              username@server.com
 #hackernews:        username
-
-# twitter_username: miri4ech 
-# github_username:  miri4ech
 
 timezone: "Asia/Tokyo"
 
